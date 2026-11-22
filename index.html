@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annotate | Coming soon</title>
+  <meta name="description" content="Snap your screen, mark it up, and share it. A new tool from VC Innovations Group, coming soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FFFFFF;
+      --card: #F2F5F7;
+      --text: #313131;
+      --muted: #5C616A;
+      --accent: #209CE0;
+      --line: #E2E7EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1C1D1F;
+        --card: #26282B;
+        --text: #F2F5F7;
+        --muted: #AEB4BB;
+        --line: #3A3D41;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans', system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    .card {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(40px, 9vw, 64px);
+      line-height: 1.05;
+      margin: 0 0 16px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--muted);
+      margin: 0 auto;
+      max-width: 460px;
+    }
+    footer {
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    footer a { color: inherit; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <span class="tag">Coming soon</span>
+      <h1>Annotate</h1>
+      <p>Snap your screen, mark it up, and share it. A new tool from VC Innovations Group.</p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 <a href="https://vcinnovationsgroup.com">VC Innovations Group</a>
+  </footer>
+</body>
+</html>
